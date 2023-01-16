@@ -7,6 +7,7 @@ import java.util.Objects;
             this.name = name;
             this.age = age;
         }
+
         public String getName() {
             return name;
         }
@@ -30,6 +31,7 @@ import java.util.Objects;
             User user = (User) o;
             return age == user.age && Objects.equals(name, user.name);
         }
+
         @Override
         public int hashCode() {
             return Objects.hash(name, age);
