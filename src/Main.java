@@ -4,7 +4,6 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
 
-
         // инфорамция для проверки
         List<User> list = new ArrayList<User>();
 
@@ -23,7 +22,6 @@ public class Main {
         findOldestUser(list);
 
         System.out.println(findOldestUser(list));
-
     }
 
     // сам метод задачи
