@@ -27,8 +27,9 @@ public class Main {
 
     // сам метод задачи
     public static User findOldestUser (Collection<User> users) {
+
         return users.stream()
-                .sorted(Comparator.comparing(User::getAge).thenComparing(Comparator.comparing(User::getName)))
+                .sorted(Comparator.comparing(User::getAge).thenComparing(User::getName))
                 .distinct()
                 .max(Comparator.comparing(User::getAge))
                 .orElse(null);
